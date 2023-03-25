@@ -1,0 +1,320 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../static/style3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Sidebar Menu Html CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2> Dashboard</h2>
+        <hr>
+        <ul class="nav">
+            <li>
+                <a href="#">
+                    <i class="fas fa-server"></i>
+                    <span onclick="showDiv('div1')"> Home </span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span onclick="showDiv('div3')">Teams</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span onclick="showDiv('div4')">Testimonials</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-question-circle"></i>
+                    <span onclick="showDiv('div9')">Social Links</span>
+
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'home'%}">
+                    <i class="fas fa-address-card"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div id="div1" class="content" style="display: block;">
+            <div class="container mt-3">
+                <div class="row rows ">
+                    <h1 class="text-center "> Welcome to Admin dashboard
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div id="div9" class="content" style="display: none;">
+                <div class="container mt-2">
+                    <div class="row rows ">
+                        <h1 class="text-center "> Our Social Media Links
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        
+        <div id="div6" class="content" style="display: none;">
+            <div class="container mt-3">
+                <div class="row rows ">
+                    <h1 class="text-center "> Testimonial h
+                    </h1>
+                </div>
+            </div>
+            <div class="container">
+                <form action="{% url 'testimonial' %}" method="POST">
+                    {% csrf_token %}
+                    
+                    <div class="mb-3 col-6 mt-5 mx-5">
+                      <label for="exampleInputEmail1" class="form-label">Id</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="ids" required>
+                    </div>
+                    <div class="mb-3 col-6 mt-5 mx-5">
+                      <label for="exampleInputEmail1" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name" required>
+                    </div>
+                    <div class="mb-3 col-6 mt-5 mx-5">
+                      <label for="exampleInputEmail1" class="form-label">Image</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="url" required>
+                    </div>
+
+                    <div class="mb-3 col-6 mt-5 mx-5">
+                        <label for="exampleInputPassword1" class="form-label">Country</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" name="country" required>
+                      </div>
+                    <div class="mb-3 col-6 mt-5 mx-5">
+                        Review
+                      <textarea name="review" id="" cols="57" rows="10" class="mt-2"></textarea required>
+                    </div>
+
+                    
+                    <input type="submit" value="Submit" class="btn btn-primary col-6 m-3 mx-5">
+                    
+                  </form>
+            </div>
+        </div>
+        <div id="div7" class="content" style="display: none;">
+            <div class="container mt-3">
+                <div class="row rows ">
+                    <h1 class="text-center "> Testimonial
+                    </h1>
+                </div>
+            </div>
+            <div class="container">
+                <form>
+                    
+                    <div class="mb-3 col-6 mt-5 mx-5">
+                      <label for="exampleInputEmail1" class="form-label">Name</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3 col-6 mt-5 mx-5">
+                      <label for="exampleInputEmail1" class="form-label">Image</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3 col-6 mt-5 mx-5">
+                        <label for="exampleInputPassword1" class="form-label">Country</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    <div class="mb-3 col-6 mt-5 mx-5">
+                        Review
+                      <textarea name="" id="" cols="57" rows="10" class="mt-2"></textarea>
+                    </div>
+
+                    
+                    
+                    <button type="submit" class="btn btn-primary col-6 m-3 mx-5">Submit</button>
+                  </form>
+            </div>
+        </div>
+        <div id="div4" class="content" style="display: none;">
+            <div class="container mt-3">
+                <div class="row rows ">
+                    <h1 class="text-center "> Testimonials
+                    </h1>
+                </div>
+            </div>
+                <div class="container mt-4">
+                    <button class="btn btn-primary" onclick="showDiv('div6')"> <i class="fa-sharp fa-solid fa-plus"></i> Add</button>
+                </div>
+            {% for d in data %}
+                <div class="card m-3">
+                    <div class="card-body">
+                      <span><strong>Id : </strong></span> <span>{{d.ids}}</span>   <br>
+                      <span><strong>Name : </strong></span> <span>{{d.name}}</span> <span class="float-end " style="cursor: pointer;"><a href="/send?id={{d.ids}}"><i class="fa-regular fa-pen-to-square" ></i> <br> <br> </a> <a href="/delete?id={{d.ids}}">  <i class="fa-solid fa-trash"></i> </a></span> <br>
+                      <span><strong>Country : </strong></span> {{d.country}}<span></span> <br>
+                      <span><strong>Review : </strong></span> {{d.review}}<span></span>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                  {% endfor %}
+                
+                
+
+        </div>
+        <div id="div3" class="content" style="display: none;">
+            <div class="container mt-3">
+                <div class="row rows ">
+                    <h1 class="text-center "> Our Teams
+                    </h1>
+                </div>
+            </div>
+            <div class="card-group p-5">
+                <div class="card col-3 mx-2">
+                  <div class="card-body p-5">
+                    <span> <strong> Name : </strong></span>  <span>Ankit Singh</span> <br>
+                    <span> <strong> Email : </strong></span>  <span>a@g.com</span> <br>
+                    <span> <strong> Role &#160; : </strong></span>  <span> Full Stack Developer</span> <br>
+                   <span><strong>Journey : </strong></span>  <span>With supporting text below as a natural lead-in to additional content.</span> <br>
+                   <form action="" class="mt-2">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                   </form>
+                   <br>
+                   <div class="text-center">
+                   <a href="#" class="btn btn-primary " onclick="done()" id="hhh">Submit</a>
+                </div>
+
+                   <script>
+                    function done() {
+                      let button = document.getElementById("hhh");
+                      let originalText = button.innerHTML;
+                    
+                      // Change the button text to "Received" and set it back to the original text after 2 seconds
+                      button.innerHTML = "Received";
+                      setTimeout(() => {
+                        button.innerHTML = originalText;
+                      }, 2000);
+                    }
+                    </script>
+
+                  </div>
+                </div>
+                <div class="card col-3 mx-2">
+                  <div class="card-body p-5">
+                    <span> <strong> Name : </strong></span>  <span>Ankit Singh</span> <br>
+                    <span> <strong> Email : </strong></span>  <span>a@g.com</span> <br>
+                    <span> <strong> Role &#160; : </strong></span>  <span> Full Stack Developer</span> <br>
+                   <span><strong>Journey : </strong></span>  <span>With supporting text below as a natural lead-in to additional content.</span> <br>
+                   <form action="" class="mt-2">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                   </form>
+                   <br>
+                   <div class="text-center">
+                    <a href="#" class="btn btn-primary" onclick="dones()" id="hh">Submit</a>
+                </div>
+                    <script>
+                        function dones() {
+                          let button = document.getElementById("hh");
+                          let originalText = button.innerHTML;
+                        
+                          // Change the button text to "Received" and set it back to the original text after 2 seconds
+                          button.innerHTML = "Received";
+                          setTimeout(() => {
+                            button.innerHTML = originalText;
+                          }, 2000);
+                        }
+                        </script>
+                  </div>
+                </div>
+                <div class="card col-3 mx-2">
+                  <div class="card-body p-5">
+                    <span> <strong> Name : </strong></span>  <span>Ankit Singh</span> <br>
+                    <span> <strong> Email : </strong></span>  <span>a@g.com</span> <br>
+                    <span> <strong> Role &#160; : </strong></span>  <span> Full Stack Developer</span> <br>
+                   <span><strong>Journey : </strong></span>  <span>With supporting text below as a natural lead-in to additional content.</span> <br>
+                   <form action="" class="mt-2">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                   </form>
+                   <br>
+                   <div class="text-center">
+                    <a href="#" class="btn btn-primary" onclick="cli()" id="hj">Submit</a>
+                </div>
+                    <script>
+                        function cli() {
+                          let button = document.getElementById("hj");
+                          let originalText = button.innerHTML;
+                        
+                          // Change the button text to "Received" and set it back to the original text after 2 seconds
+                          button.innerHTML = "Received";
+                          setTimeout(() => {
+                            button.innerHTML = originalText;
+                          }, 2000);
+                        }
+                        </script>
+                    
+                  </div>
+                </div>
+                
+                
+              </div>
+              
+
+        </div>
+        
+
+        
+      
+        
+      
+    </div>
+
+    <script>
+        function showDiv(divId) {
+            // Get all divs with class "content"
+            var divs = document.getElementsByClassName('content');
+
+            // Loop through each div and hide it if it's not the selected one
+            for (var i = 0; i < divs.length; i++) {
+                if (divs[i].id !== divId) {
+                    divs[i].style.display = 'none';
+                }
+            }
+
+            // Show the selected div
+            document.getElementById(divId).style.display = 'block';
+        }
+    </script>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

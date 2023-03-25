@@ -1,0 +1,409 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="{% static '../static/index.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" />
+</head>
+
+<body>
+  <div class="desktop-5">
+    <div class="desktop-5-child"></div>
+    <div class="illus">
+      <div class="vector-parent">
+        <img class="group-child" alt="" src="{% static '../static/images/vector-99.svg' %}" /><img class="vector-icon" alt=""
+          src="{% static '../static/images/vector.svg'%}" />
+      </div>
+      <div class="flight-booking">
+        <div class="where-are-you">Where are you flying?</div>
+        <div class="text-field-parent">
+          <input class="text-field" type="text" defaultvalue="From - To" placeholder="Lahore - Karachi" /><input
+            class="text-field1" type="text" defaultvalue="Trip" placeholder="Return" /><input class="text-field"
+            type="text" defaultvalue="Depart- Return" placeholder="07 Nov 22 - 13 Nov 22" /><input class="text-field"
+            type="text" defaultvalue="Passenger - Class" placeholder="1 Passenger, Economy" />
+        </div>
+        <div class="button-parent">
+          <div class="button">
+            <button class="style-layer">
+              <input type="checkbox" name="" id="">
+              <div class="button1">Add Promo Code</div>
+            </button>
+          </div>
+          <button class="button2">
+            <div class="style-layer1">
+              <img class="add-outline-icon" alt="" src="{% static '../static/images/paper-plane.svg' %}" />
+              <div class="button3"><a href="{% url 'travel' %}" style="text-decoration: none; color: white;">Show Filghtss</a></div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="island-haeding">
+        <b class="island-stays">Island Stays</b>
+        <div class="one-can-choose-container">
+          <p class="one-can-choose">
+            One can choose from a variety of beautiful coral islands which
+            offers different staying experiences from thatched huts to
+            luxurious
+          </p>
+          <p class="one-can-choose">
+            modern properties. Every island offers a wider range of water
+            sports and beach activities for you to enjoy.
+          </p>
+        </div>
+      </div>
+      <div class="images-17-1-parent">
+        <img class="images-17-1" alt="" src="{% static '../static/images/images-17-1@2x.png' %}" />
+        <div class="frame-parent">
+          <div class="kavaratti-wrapper">
+            <b class="kavaratti">Kavaratti</b>
+          </div>
+          <div class="kavaratti-is-the-capital-of-th-wrapper">
+            <div class="kavaratti-is-the-container">
+              <p class="one-can-choose">
+                Kavaratti is the capital of the Union Territory
+              </p>
+              <p class="one-can-choose">of Lakshadweep having ...</p>
+            </div>
+          </div>
+          <div class="explore-btn-wrapper">
+            <button class="explore-btn">
+              <div class="explore-more">Explore More</div>
+            </button>
+          </div>
+          <div class="rating">
+            <div class="instance-parent">
+              <img class="group-item" alt="" src="{% static '../static/images/star-1@2x.png' %}" /><b class="b">4.5
+              </b>
+            </div>
+            <div class="k-review">(1.5k Review)</div>
+          </div>
+        </div>
+      </div>
+      <div class="images-17-1-group">
+        <img class="images-17-1" alt="" src="{% static '../static/images/images-17-11@2x.png' %}" />
+        <div class="frame-parent">
+          <div class="kavaratti-wrapper">
+            <b class="kavaratti">Kavaratti</b>
+          </div>
+          <div class="kavaratti-is-the-capital-of-th-wrapper">
+            <div class="kavaratti-is-the-container">
+              <p class="one-can-choose">
+                Kavaratti is the capital of the Union Territory
+              </p>
+              <p class="one-can-choose">of Lakshadweep having ...</p>
+            </div>
+          </div>
+          <div class="explore-btn-wrapper">
+            <button class="explore-btn1">
+              <div class="explore-more">Explore More</div>
+            </button>
+          </div>
+          <div class="rating">
+            <div class="instance-parent">
+              <img class="group-item" alt="" src="{% static '../static/images/star-1@2x.png' %}" /><b class="b">4.5
+              </b>
+            </div>
+            <div class="k-review">(1.5k Review)</div>
+          </div>
+        </div>
+      </div>
+      <div class="images-17-1-container">
+        <img class="images-17-12" alt="" src="{% static '../static/images/images-17-12@2x.png' %}" />
+        <div class="frame-container">
+          <div class="kavaratti-wrapper">
+            <b class="kavaratti">Kavaratti</b>
+          </div>
+          <div class="kavaratti-is-the-capital-of-th-wrapper">
+            <div class="kavaratti-is-the-container">
+              <p class="one-can-choose">
+                Kavaratti is the capital of the Union Territory
+              </p>
+              <p class="one-can-choose">of Lakshadweep having ...</p>
+            </div>
+          </div>
+          <div class="explore-btn-wrapper">
+            <button class="explore-btn1">
+              <div class="explore-more">Explore More</div>
+            </button>
+          </div>
+          <div class="rating">
+            <div class="instance-parent">
+              <img class="group-item" alt="" src="{% static '../static/images/star-1@2x.png' %}" /><b class="b">4.5
+              </b>
+            </div>
+            <div class="k-review">(1.5k Review)</div>
+          </div>
+        </div>
+      </div>
+      <div class="frame-div">
+        <img class="images-17-12" alt="" src="{% static '../static/images/images-17-13@2x.png' %}" />
+        <div class="frame-parent">
+          <div class="kavaratti-wrapper">
+            <b class="kavaratti">Kavaratti</b>
+          </div>
+          <div class="kavaratti-is-the-capital-of-th-wrapper">
+            <div class="kavaratti-is-the-container">
+              <p class="one-can-choose">
+                Kavaratti is the capital of the Union Territory
+              </p>
+              <p class="one-can-choose">of Lakshadweep having ...</p>
+            </div>
+          </div>
+          <div class="explore-btn-wrapper">
+            <button class="explore-btn1">
+              <div class="explore-more">Explore More</div>
+            </button>
+          </div>
+          <div class="rating">
+            <div class="instance-parent">
+              <img class="group-item" alt="" src="{% static '../static/images/star-1@2x.png' %}" /><b class="b">4.5
+              </b>
+            </div>
+            <div class="k-review">(1.5k Review)</div>
+          </div>
+        </div>
+      </div>
+      <div class="images-17-1-parent1">
+        <img class="images-17-14" alt="" src="{% static '../static/images/images-17-14@2x.png' %}" />
+        <div class="frame-parent2">
+          <div class="kavaratti-wrapper">
+            <b class="kavaratti">Kavaratti</b>
+          </div>
+          
+          <div class="explore-btn-wrapper">
+            <button class="explore-btn1">
+              <div class="explore-more">Explore More</div>
+            </button>
+          </div>
+          <div class="rating">
+            <div class="instance-parent">
+              <img class="group-item" alt="" src="{% static '../static/images/star-1@2x.png' %}" /><b class="b">4.5
+              </b>
+            </div>
+            <div class="k-review">(1.5k Review)</div>
+          </div>
+        </div>
+      </div>
+      <div class="images-17-1-parent2">
+        <img class="images-17-14" alt="" src="{% static '../static/images/images-17-15@2x.png' %}" />
+        <div class="frame-parent">
+          <div class="kavaratti-wrapper">
+            <b class="kavaratti">Kavaratti</b>
+          </div>
+          <div class="kavaratti-is-the-capital-of-th-wrapper">
+            <div class="kavaratti-is-the-container">
+              <p class="one-can-choose">
+                Kavaratti is the capital of the Union Territory
+              </p>
+              <p class="one-can-choose">of Lakshadweep having ...</p>
+            </div>
+          </div>
+          <div class="explore-btn-wrapper">
+            <button class="explore-btn1">
+              <div class="explore-more">Explore More</div>
+            </button>
+          </div>
+          <div class="rating">
+            <div class="instance-parent">
+              <img class="group-item" alt="" src="{% static '../static/images/star-1@2x.png' %}" /><b class="b">4.5
+              </b>
+            </div>
+            <div class="k-review">(1.5k Review)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="login-signup-button">
+        <div class="login-wrapper"><a class="login">Login</a></div>
+        <button class="sign-up-wrapper">
+          <div class="sign-up">Sign up</div>
+        </button>
+      </div>
+      <img class="gol-logo-1-icon" alt="" src="./public/gollogo-1@2x.png" />
+      <nav class="nav-var">
+        <a class="find-reservations">Find Reservations</a
+        ><a class="packages-parent"
+          ><div class="packages">Packages</div>
+          <img class="vector-icon1" alt="" src="./public/vector1.svg" /></a
+        ><a class="about-lakshadweep-parent"
+          ><div class="packages">About Lakshadweep</div>
+          <img class="vector-icon2" alt="" src="./public/vector2.svg" /></a
+        ><a class="find-reservations">About Us</a
+        ><a class="find-reservations">Gol</a
+        ><a class="find-reservations">Support</a>
+      </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          
+          <img class="gol-logo-1-icon" alt="" src="{% static '../static/images/gollogo-1@2x.png' %}" /> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end mt-4" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'visit' %}">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{%url 'testimonial'%}"><button class="btn btn-primary">Admin</button></a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- home start -->
+
+    <div class="homes">
+
+    <div class="heading">
+      <h1 class="the-exotic-lakshadweep-container">
+        <span class="the-exotic-lakshadweep-container1">
+          <p class="one-can-choose">The Exotic</p>
+          <p class="lakshadweep">Lakshadweep</p>
+          <p class="one-can-choose">Islands</p>
+        </span>
+      </h1>
+      <button class="rectangle-parent">
+        <div class="rectangle-div"></div>
+        <div class="visit-parent">
+          <div class="visit">Visit</div>
+          <img class="group-icon" alt="" src="{% static '../static/images/group-8.svg' %}" />
+        </div>
+      </button>
+    </div>
+    <button class="discover-btn">
+      <b class="discover-now">Discover Now</b></button><img class="map-icon" alt="" src="{% static '../static/images/map@2x.png' %}" />
+    <div class="illustration">
+      <div class="illustration-child"></div>
+      <img class="bg-icon" alt="" src="{% static '../static/images/bg.svg'%}" /><img class="people-icon" alt=""
+        src="{% static '../static/images/people@2x.png'%}" />
+      <div class="item">
+        <div class="icbaseline-flight-parent">
+          <img class="icbaseline-flight-icon" alt="" src="{% static '../static/images/icbaselineflight.svg' %}" />
+          <div class="jakarta-bali">Jakarta - Bali</div>
+        </div>
+        <div class="frame-wrapper">
+          <img class="frame-icon" alt="" src="{% static '../static/images/frame.svg' %}" />
+        </div>
+        
+        
+        <div class="card1">
+          <div class="card-inner"></div>
+          <img class="rectangle-icon" alt="" src="{% static '../static/images/rectangle-91@2x.png' %}" />
+          <div class="card-child1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Home ends -->
+    <div class="desktop-5-inner">
+
+    </div>
+    <div class="lets-ready-to-explore-the-wor-parent">
+      <b class="lets-ready-to-container">
+        <p class="one-can-choose">Let’s Ready to Explore The</p>
+        <p class="one-can-choose">World With Us.</p>
+      </b>
+      <div class="lorem-ipsum-dolor-container">
+        <span class="the-exotic-lakshadweep-container1">
+          <p class="one-can-choose">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="one-can-choose">
+            Pellentesque efficitur ac quam in congue.
+          </p>
+        </span>
+      </div>
+      <button class="cta-wrapper">
+        <div class="cta">
+          <div class="contact-us"><a style="text-decoration: none;" href="mailto:officials.ankitsingh@gmail.com">Contact Us</a></div>
+        </div>
+      </button>
+    </div>
+    <footer class="footer">
+      <img class="footer-child" alt="" src="{% static '../static/images/rectangle-14@2x.png' %}" />
+      <div class="social-media">
+        <div class="social-media-child"></div>
+        <img class="facebook-icon" alt="" src="{% static '../static/images/facebook.svg' %}" />
+        <div class="social-media-item"></div>
+        <img class="twitter-icon" alt="" src="{% static '../static/images/twitter.svg' %}" />
+        <div class="social-media-inner"></div>
+        <div class="social-media-child1"></div>
+        <img class="vector-icon3" alt="" src="{% static '../static/images/vector3.svg' %}" /><img class="vector-icon4" alt=""
+          src="{% static '../static/images/vector4.svg' %}" /><img class="vector-icon5" alt="" src="{% static '../static/images/vector5.svg' %}" />
+      </div>
+      <div class="link">
+        <div class="company">Company</div>
+        <a class="events">Events</a><a class="blogs">Blogs</a><a class="faq">FAQ</a><a class="join-us">Join US</a>
+        <div class="about">About</div>
+        <a class="project">Project</a><a class="lorem">Lorem</a><a class="services">Services</a><a class="our-story">Our
+          Story</a>
+        <div class="contact-us1" id="con123">Contact Us</div>
+        <div class="abcloremcom">7002468181</div>
+        <div class="india">India</div>
+      </div>
+      <div class="logo-summary">
+        <div class="lorem-ipsum-is-container">
+          <span class="the-exotic-lakshadweep-container1">
+            <p class="one-can-choose">Lorem Ipsum is simply dummy</p>
+            <p class="one-can-choose">text of the printing and type</p>
+            <p class="one-can-choose">setting industry.</p>
+          </span>
+        </div>
+        <img class="gol-logo-white-1-icon" alt="" src="{% static '../static/images/gollogowhite-1@2x.png' %}" />
+      </div>
+      <div class="footer-item"></div>
+      <div class="copyright-2023">
+        Copyright © 2023 GoL Travels Private Limited. All Rights Reserved.
+      </div>
+    </footer>
+    <div class="download-our-app">
+      <div class="download-our-app-child"></div>
+      <button class="play-store">
+        <div class="vector-parent">
+          <div class="group-child4"></div>
+          <div class="google-play-png-logo-3789-1-parent">
+            <img class="google-play-png-logo-3789-1-icon" alt="" src="{% static '../static/images/googleplaypnglogo3789-1@2x.png' %}" /><b
+              class="get-in-on">GET IN ON</b><b class="google-play">Google Play</b>
+          </div>
+        </div>
+      </button>
+      <div class="ellipse-parent">
+        <img class="ellipse-icon" alt="" src="{% static '../static/images/ellipse-10.svg' %}" /><img class="frame-icon1" alt=""
+          src="{% static '../static/images/frame1.svg' %}" />
+      </div>
+      <b class="download-our-app1">Download Our App</b>
+      <div class="the-best-travel">The best travel in the world</div>
+      <img class="element-icon" alt="" src="{% static '../static/images/element.svg' %}" />
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

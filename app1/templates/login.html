@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background: linear-gradient(180deg, #E5F8FE 14.25%, rgba(255, 255, 255, 0) 100%);
+            height: 100vh;
+        }
+
+        .fro {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container tops mt-5">
+        <div class="row mt-5">
+            <h2 class="text-center">Sign In Here</h2>
+            <form action="{% url 'login' %}" method="POST">
+                {% csrf_token %}
+                 <div class="fro">
+
+
+
+                    <div class="mb-3 col-6 mt-5">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com" name="email">
+                    </div>
+                    <br>
+                    <div class="mb-3 col-6 ">
+                        <label for="exampleFormControlInput1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Enter Your Password" name="password">
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-primary mb-2 mt-3" value="Sign In">
+                        <br>
+                        <a href="{% url 'signup'%}">Don't have an account</a>
+                    </div>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                        crossorigin="anonymous"></script>
+
+
+        </div>
+    </form>
+   
+    </div>
+</body>
+
+</html>
